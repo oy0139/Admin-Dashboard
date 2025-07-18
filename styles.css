@@ -1,0 +1,19 @@
+.Admin-Dashboard {
+    display: grid;
+    grid-template: 1fr 1fr 3fr / 1fr 4fr;
+    height: 500px;
+}
+
+.Sidebar-content {
+    background-color: rgb(26, 117, 255);
+    grid-row: 1 / 4;
+}
+.Header {
+    background-color: white;
+    
+}
+.Main-content {
+    background-color: rgb(140, 140, 140);
+    grid-row: 2 / 4;
+}
+
