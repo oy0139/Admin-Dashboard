@@ -1,7 +1,15 @@
+* { /* universal reset*/
+  margin: 0; /* removes extra space outside*/
+  padding: 0; /*removes default padding*/
+  box-sizing: border-box;  /*includes padding and border in height and width defined*/;
+}
+
+
 .Admin-Dashboard {
     display: grid;
     grid-template: 1fr 1fr 3fr / 1fr 4fr;
     height: 100vh;
+
 }
 
 
@@ -12,11 +20,8 @@
     grid-row: 1 / 4;
     justify-content: start;
     color: white;
-    grid-auto-rows: min-content;
+    grid-auto-rows: min-content; /*size each row enough to fit its content*/
     gap: 30px;
-}
-
-.Sidebar-header {
 }
 
 .Sidebar-body-1 {
