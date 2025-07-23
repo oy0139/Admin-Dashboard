@@ -48,7 +48,6 @@
     display: grid;
     grid-template: 1fr 1fr / 1fr  1fr;
     grid-row: 1 / 2;
-
 }
 
 .Main-content {
@@ -86,12 +85,14 @@ input {
 .Navigation-list {
     grid-column: 2;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0px 50px;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 20px;
 }
 
 .Navigation-list > li {
-    place-self: center;
+    align-self: center;
+    
 }
 
 .Subheader {
@@ -119,16 +120,18 @@ input {
 .Subheader-buttons {
     display: grid;
     grid-column: 2;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    gap: 30px;
 }
 
 .subheader-button {
-    padding: 10px 25px;
-    border-radius: 20px;
+    padding: 15px 25px;
+    border-radius: 30px;
     background-color: blue;
     color: white;
     border: none;
+    align-self: center;
 }
 
 .Main-content {
