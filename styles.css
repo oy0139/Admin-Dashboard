@@ -7,7 +7,7 @@
 
 .Admin-Dashboard {
     display: grid;
-    grid-template: auto 1fr / 200px 1fr;
+    grid-template: 1fr 5fr / 200px 1fr;
     height: 100vh;
 }
 
@@ -136,7 +136,6 @@ input {
     display: grid;
     grid-template: 1fr / 3fr 1fr;
     gap: 10px;
-    
 }
 
 .Project-Section {
@@ -148,14 +147,16 @@ input {
 
 .card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
 }
 
 .project-card-content {
+    border-left:  10px solid orange;
     padding: 15px;
-    height: 170px;
-    width: 380px;
+    height: 200px;
+    width: 100%; /*covers the whole width*/
+    max-width: 400px; /*max size of each card*/
     background-color: white;
     border-radius: 10px;
     display: grid;
@@ -171,6 +172,57 @@ input {
 
 .Project-Section-icons {
     grid-row: 2;
+}
+
+.Right-side-panel {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 40px;
+}
+
+.Announcements-container {
+    display: grid;
+    gap: 10px;
+}
+
+.Announcements-card {
+    padding: 15px;
+    background-color: white;
+    height: 270px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
+.Announcements-section1, .Announcements-section2 {
+    border-bottom: 1px solid gray;
+}
+
+
+ .title {
+    font-weight: bold;
+}
+
+.Trending-card {
+    display: grid;
+    gap: 10px;
+}
+
+.Trending-container{
+    height: 280px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    display: grid;
+    gap: 15px;
+}
+
+.Trending-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 10px;
 }
 
 ul {
